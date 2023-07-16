@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Internal styling -->
+    <style>
+        #div1 {
+            height: 200px;
+            width: 200px;
+            background-color: burlywood;
+        }
+
+        div {
+            font-weight: bold;
+        }
+
+        /* combinator selectors */
+
+        div span {
+            font-family:cursive;
+        }
+
+        div > span {
+            color: blanchedalmond;
+        }
+
+        div + span {
+            color: grey
+        }
+
+        main ~ span {
+            font-weight: 900;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center; font-size: 24px;"> Introduction to CSS </h1>
+
+    <div id="div1">
+        Text in first div!
+    </div>
+
+    <div class="grp1" >
+        Text added in div!
+    </div>
+
+    <span class="grp1">
+        Some text here!
+    </span>
+
+    <main class="grp2" >
+
+        <p>
+            <span> Some text here in paragraph! </span>
+        </p>
+
+        <span> Some text here in div! </span>
+
+    </main>
+
+    <span>
+        Span after div!
+    </span>
+
+    <span>
+        Second span after div!
+    </span>
+
+    <span>
+        Third span after div!
+    </span>
+    
+
+</body>
+
+</html>
