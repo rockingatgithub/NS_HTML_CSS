@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        #div1 {
+            height: 200px;
+            width: 200px;
+            background-color: blanchedalmond;
+        }
+
+        #div1:hover {
+            background-color: grey;
+        }
+
+        a {
+            color: gold
+        }
+
+        /* pseudo class selector */
+
+        a:visited {
+            color: brown
+        }
+
+        a:active {
+            color: pink
+        }
+
+        #name-input:focus {
+            color: brown;
+            border: 2px solid grey !important;
+        }
+
+        li:first-child {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        li:nth-child(3) {
+            color: pink
+        }
+
+        li:nth-last-child(2) {
+            color: grey
+        }
+
+        input:last-of-type {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        input:required {
+            color: blueviolet;
+        }
+
+        /* input:not(#name-input) {
+            font-size: 30px;
+        } */
+
+        /* pseudo element selectors */
+
+        #para1::first-letter {
+            font-weight: bold;
+        }
+
+        #para1::first-line {
+            color: pink
+        }
+
+        #para1::selection {
+            background-color: grey;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li::before {
+            /* content: url(''); */
+            content: '==>';
+        }
+
+        li::after {
+            content: '*';
+        }
+
+        [type="text"] {
+            font-weight: bolder;
+        }
+
+        [id$="input"] {
+            background-color: cadetblue;
+        }
+
+        [id^="name"] {
+            background-color: blanchedalmond;
+        }
+
+        [id*="last"] {
+            background-color: cornsilk;
+        }
+
+        [class~="middle"] {
+            color: grey;
+        }
+
+        [class|="input"] {
+            color: red
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="div1">
+        Some text here!
+    </div>
+
+    <a href="https://en.wikipedia.org/wiki/HTML#Headings"> Wikipedia </a>
+
+
+    <input id="name-input" type="text" name="name" />
+
+    <input id="name-last-input" type="text" name="last-name" class="input-grp middle last" />
+
+
+    <input id="password-input" type="password" name="password" />
+
+    <input id="email-input" type="email" name="email" required />
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>ReactJS</li>
+        <li>NodeJS</li>
+    </ul>
+
+    <p id="para1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Minus natus repudiandae dolor explicabo! Corrupti, rem saepe?
+        Architecto velit voluptate fugiat suscipit molestiae mollitia
+        eveniet ratione culpa praesentium, exercitationem eum modi!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Nulla quibusdam deserunt sed nobis quod perspiciatis recusandae,
+        quam, itaque eius nesciunt odit facilis sint, illo laboriosam
+        tempora repellendus sit odio quaerat.
+    </p>
+
+</body>
+
+</html>
