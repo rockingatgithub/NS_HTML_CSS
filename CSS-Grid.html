@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #container {
+            /* column-gap: 20px;
+            row-gap: 20px; */
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 100px 100px 100px;
+            gap: 20px;
+            /* justify-content: center; */
+            height: 400px;
+            width: 1000px;
+            align-content: center;
+        }
+
+        #container div {
+            /* height: 100px; */
+            /* width: 300px; */
+            background-color: cadetblue;
+            border: 1px solid black;
+        }
+
+        #div1 {
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+            grid-area: 2 / 2 / 4 / 4;
+        }
+
+        #div3 {
+            /* grid-row-start: 1;
+            grid-row-end: 3; */
+            /* start from 2 and span to 4 columns */
+            /* grid-column: 2 / span 4; */
+            /* we can define row and column for both start and end to give an area */
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    
+
+    <div id="container" >
+
+        <div id="div1" >
+
+        </div>
+
+        <div id="div2" >
+
+        </div>
+
+        <div id="div3" >
+
+        </div>
+
+        <div id="div4" >
+
+        </div>
+
+        <div id="div5" >
+
+        </div>
+
+        <div id="div6" >
+
+        </div>
+
+        <div id="div7" >
+
+        </div>
+
+        <div id="div8" >
+
+        </div>
+
+        <div id="div9" >
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>

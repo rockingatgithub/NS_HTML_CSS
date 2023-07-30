@@ -8,38 +8,34 @@
 
     <style>
 
-        h1, h2 {
+        
+        h2, h3 {
             display: none;
         }
 
-        img {
-            height: 60vh;
-            width: 60vw;
-        }
-
-        @media screen and (min-width: 576px) {
-
+        @media screen and (max-width: 912px) {
+            
             h2 {
                 display: block;
             }
+
+            h1 {
+                display: none;
+            }
+
+        }
+
+        @media screen and (max-width: 576px) {
 
             h3 {
-                display: none;
-            }
-
-        }
-
-        @media screen and (min-width: 912px) {
-            
-            h1 {
                 display: block;
             }
 
             h2 {
                 display: none;
             }
-        }
 
+        }
         
 
     </style>
@@ -52,8 +48,6 @@
     <h2> This is for tablet! </h2>
 
     <h3> This is my phone! </h3>
-
-    <img src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg" />
     
 </body>
 </html>
