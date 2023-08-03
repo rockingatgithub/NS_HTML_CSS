@@ -8,7 +8,7 @@
     <title>Document</title>
 
     <style>
-        #container {
+        /* #container {
             font-size: 24px;
             text-align: center;
             height: 500px;
@@ -21,24 +21,44 @@
             grid-gap: 20px;
             justify-content: space-between;
             align-content: end;
-            /* grid-column-gap: 60px;
-            grid-row-gap: 100px; */
+            grid-column-gap: 60px;
+            grid-row-gap: 100px;
+        } */
+
+        /* #container div {
+            height: 100px;
+            width: 300px;
+            border: 1px solid black;
+            background-color: cadetblue;
+        } */
+
+        /* #div1 {
+            grid-column: 2 / span 3;
+        } */
+
+        /* #div4 {
+            grid-row: 2 / span 2
+        } */
+
+        #container-1 {
+            display: grid;
+            grid-template-columns: 330px 330px 330px;
+            grid-template-rows: 150px 150px 150px;
+            height: 450px;
+            width: 1000px;
+            background-color: blanchedalmond;
+            justify-content: center;
+            align-items: center;    
         }
 
-        #container div {
+        #container-1 div {
             height: 100px;
             width: 300px;
             border: 1px solid black;
             background-color: cadetblue;
         }
 
-        /* #div1 {
-            grid-column: 2 / span 3;
-        } */
-
-        #div4 {
-            grid-row: 2 / span 2
-        }
+        
 
 
     </style>
@@ -47,7 +67,7 @@
 
 <body>
 
-    <div id="container">
+    <!-- <div id="container">
 
         <div id="div1">
             1
@@ -83,6 +103,46 @@
 
         <div id="div9">
             9
+        </div>
+
+    </div> -->
+
+    <div id="container-1" >
+
+        <div id="div1" >
+1
+        </div>
+
+        <div id="div1" >
+2
+        </div>
+
+        <div id="div1" >
+3
+        </div>
+
+        <div id="div1" >
+4
+        </div>
+
+        <div id="div1" >
+5
+        </div>
+
+        <div id="div1" >
+6
+        </div>
+
+        <div id="div1" >
+7
+        </div>
+
+        <div id="div1" >
+8
+        </div>
+
+        <div id="div1" >
+9
         </div>
 
     </div>
